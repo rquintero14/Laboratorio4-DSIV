@@ -12,7 +12,7 @@ namespace Laboratorio4
 {
     public partial class Form1 : Form
     {
-        double montoBruto, montoNeto,interes,montoCuota;
+        double montoBruto, montoNeto,interes=0;
         int cantidadCuota;
         public Form1()
         {
@@ -43,8 +43,8 @@ namespace Laboratorio4
 
         void CalcularNeto() {
             montoNeto = montoBruto * (1.07 + interes);
-            txtMontoF.Text = "El Monto final es de: " + montoNeto;
-            txtMontoC.Text = "El monto por cuotas es de: " + montoNeto / cantidadCuota;
+            txtMontoF.Text = "El Monto final es de: " + Math.Round(montoNeto,2);
+            txtMontoC.Text = "El monto por cuotas es de: " + Math.Round(montoNeto / cantidadCuota,2);
 
         }
 
@@ -69,31 +69,52 @@ namespace Laboratorio4
                 cbCuotas.Hide();
             }
 
-            CalcularInteres();
+            
         }
 
         private void cbCuotas_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cbCuotas.SelectedIndex != -1)
             {
+                CalcularInteres();
                 cantidadCuota = int.Parse(cbCuotas.SelectedItem.ToString());
                 CalcularNeto();
+                mostrarResultados();
             }
                
             else return;
                 
         }
 
+        void esconderResultados() {
+            txtMontoC.Hide();
+            txtMontoF.Hide();
+        }
+
+        private void rbContado_CheckedChanged(object sender, EventArgs e)
+        {   
+            CalcularInteres();
+            esconderResultados();
+            CalcularNeto();
+            txtMontoF.Show();
+        }
+
+        void mostrarResultados() {
+            txtMontoC.Show();
+            txtMontoF.Show();
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
             this.AutoValidate = AutoValidate.EnablePreventFocusChange;
             errorProvider1.BlinkStyle = ErrorBlinkStyle.NeverBlink;
             cbCuotas.Hide();
+            esconderResultados();
         }
 
         private void cbProducto_SelectedIndexChanged(object sender, EventArgs e)
         {
             DeterminarBruto();
+            CalcularNeto();
         }
     }
 }

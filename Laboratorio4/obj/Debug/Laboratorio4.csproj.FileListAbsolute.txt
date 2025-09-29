@@ -9,3 +9,14 @@ C:\Users\jesus\OneDrive\UNIVERSIDAD\UTP\SEMESTRES\2 AÑO\2 SEMESTRE\DS IV\Activi
 C:\Users\jesus\OneDrive\UNIVERSIDAD\UTP\SEMESTRES\2 AÑO\2 SEMESTRE\DS IV\Actividades\Laboratorios\Lab4\Laboratorio4-DSIV\Laboratorio4\obj\Debug\Laboratorio4.exe
 C:\Users\jesus\OneDrive\UNIVERSIDAD\UTP\SEMESTRES\2 AÑO\2 SEMESTRE\DS IV\Actividades\Laboratorios\Lab4\Laboratorio4-DSIV\Laboratorio4\obj\Debug\Laboratorio4.pdb
 C:\Users\jesus\OneDrive\UNIVERSIDAD\UTP\SEMESTRES\2 AÑO\2 SEMESTRE\DS IV\Actividades\Laboratorios\Lab4\Laboratorio4-DSIV\Laboratorio4\obj\Debug\Laboratorio4.exe.config
+C:\Users\Usuario\OneDrive\UNIVERSIDAD\UTP\SEMESTRES\2 AÑO\2 SEMESTRE\DS IV\Actividades\Laboratorios\Lab4\Laboratorio4-DSIV\Laboratorio4\bin\Debug\Laboratorio4.exe.config
+C:\Users\Usuario\OneDrive\UNIVERSIDAD\UTP\SEMESTRES\2 AÑO\2 SEMESTRE\DS IV\Actividades\Laboratorios\Lab4\Laboratorio4-DSIV\Laboratorio4\bin\Debug\Laboratorio4.exe
+C:\Users\Usuario\OneDrive\UNIVERSIDAD\UTP\SEMESTRES\2 AÑO\2 SEMESTRE\DS IV\Actividades\Laboratorios\Lab4\Laboratorio4-DSIV\Laboratorio4\bin\Debug\Laboratorio4.pdb
+C:\Users\Usuario\OneDrive\UNIVERSIDAD\UTP\SEMESTRES\2 AÑO\2 SEMESTRE\DS IV\Actividades\Laboratorios\Lab4\Laboratorio4-DSIV\Laboratorio4\obj\Debug\Laboratorio4.csproj.AssemblyReference.cache
+C:\Users\Usuario\OneDrive\UNIVERSIDAD\UTP\SEMESTRES\2 AÑO\2 SEMESTRE\DS IV\Actividades\Laboratorios\Lab4\Laboratorio4-DSIV\Laboratorio4\obj\Debug\Laboratorio4.exe.config
+C:\Users\Usuario\OneDrive\UNIVERSIDAD\UTP\SEMESTRES\2 AÑO\2 SEMESTRE\DS IV\Actividades\Laboratorios\Lab4\Laboratorio4-DSIV\Laboratorio4\obj\Debug\Laboratorio4.Form1.resources
+C:\Users\Usuario\OneDrive\UNIVERSIDAD\UTP\SEMESTRES\2 AÑO\2 SEMESTRE\DS IV\Actividades\Laboratorios\Lab4\Laboratorio4-DSIV\Laboratorio4\obj\Debug\Laboratorio4.Properties.Resources.resources
+C:\Users\Usuario\OneDrive\UNIVERSIDAD\UTP\SEMESTRES\2 AÑO\2 SEMESTRE\DS IV\Actividades\Laboratorios\Lab4\Laboratorio4-DSIV\Laboratorio4\obj\Debug\Laboratorio4.csproj.GenerateResource.cache
+C:\Users\Usuario\OneDrive\UNIVERSIDAD\UTP\SEMESTRES\2 AÑO\2 SEMESTRE\DS IV\Actividades\Laboratorios\Lab4\Laboratorio4-DSIV\Laboratorio4\obj\Debug\Laboratorio4.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\OneDrive\UNIVERSIDAD\UTP\SEMESTRES\2 AÑO\2 SEMESTRE\DS IV\Actividades\Laboratorios\Lab4\Laboratorio4-DSIV\Laboratorio4\obj\Debug\Laboratorio4.exe
+C:\Users\Usuario\OneDrive\UNIVERSIDAD\UTP\SEMESTRES\2 AÑO\2 SEMESTRE\DS IV\Actividades\Laboratorios\Lab4\Laboratorio4-DSIV\Laboratorio4\obj\Debug\Laboratorio4.pdb
