@@ -28,19 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.lbBienvenida = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cbCuotas = new System.Windows.Forms.ComboBox();
+            this.rbCuotas = new System.Windows.Forms.RadioButton();
+            this.rbContado = new System.Windows.Forms.RadioButton();
+            this.label4 = new System.Windows.Forms.Label();
             this.txtMontoF = new System.Windows.Forms.Label();
             this.txtMontoC = new System.Windows.Forms.Label();
             this.cbProducto = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btn = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.rbContado = new System.Windows.Forms.RadioButton();
-            this.rbCuotas = new System.Windows.Forms.RadioButton();
-            this.cbCuotas = new System.Windows.Forms.ComboBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -80,23 +83,69 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos personales";
             // 
+            // cbCuotas
+            // 
+            this.cbCuotas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbCuotas.FormattingEnabled = true;
+            this.cbCuotas.Items.AddRange(new object[] {
+            "12",
+            "18",
+            "36"});
+            this.cbCuotas.Location = new System.Drawing.Point(157, 192);
+            this.cbCuotas.Name = "cbCuotas";
+            this.cbCuotas.Size = new System.Drawing.Size(120, 33);
+            this.cbCuotas.TabIndex = 7;
+            this.cbCuotas.SelectedIndexChanged += new System.EventHandler(this.cbCuotas_SelectedIndexChanged);
+            // 
+            // rbCuotas
+            // 
+            this.rbCuotas.AutoSize = true;
+            this.rbCuotas.Location = new System.Drawing.Point(26, 196);
+            this.rbCuotas.Name = "rbCuotas";
+            this.rbCuotas.Size = new System.Drawing.Size(96, 29);
+            this.rbCuotas.TabIndex = 6;
+            this.rbCuotas.TabStop = true;
+            this.rbCuotas.Text = "Cuotas";
+            this.rbCuotas.UseVisualStyleBackColor = true;
+            this.rbCuotas.CheckedChanged += new System.EventHandler(this.rbCuotas_CheckedChanged);
+            // 
+            // rbContado
+            // 
+            this.rbContado.AutoSize = true;
+            this.rbContado.Location = new System.Drawing.Point(26, 161);
+            this.rbContado.Name = "rbContado";
+            this.rbContado.Size = new System.Drawing.Size(126, 29);
+            this.rbContado.TabIndex = 5;
+            this.rbContado.TabStop = true;
+            this.rbContado.Text = "Al contado";
+            this.rbContado.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 121);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(144, 25);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Forma de pago";
+            // 
             // txtMontoF
             // 
             this.txtMontoF.AutoSize = true;
             this.txtMontoF.Location = new System.Drawing.Point(6, 296);
             this.txtMontoF.Name = "txtMontoF";
-            this.txtMontoF.Size = new System.Drawing.Size(107, 25);
+            this.txtMontoF.Size = new System.Drawing.Size(118, 25);
             this.txtMontoF.TabIndex = 3;
-            this.txtMontoF.Text = "Monto final";
+            this.txtMontoF.Text = "Monto final: ";
             // 
             // txtMontoC
             // 
             this.txtMontoC.AutoSize = true;
             this.txtMontoC.Location = new System.Drawing.Point(6, 248);
             this.txtMontoC.Name = "txtMontoC";
-            this.txtMontoC.Size = new System.Drawing.Size(153, 25);
+            this.txtMontoC.Size = new System.Drawing.Size(164, 25);
             this.txtMontoC.TabIndex = 2;
-            this.txtMontoC.Text = "Monto por cuota";
+            this.txtMontoC.Text = "Monto por cuota: ";
             // 
             // cbProducto
             // 
@@ -110,7 +159,8 @@
             this.cbProducto.Name = "cbProducto";
             this.cbProducto.Size = new System.Drawing.Size(299, 33);
             this.cbProducto.TabIndex = 1;
-            this.cbProducto.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.cbProducto.SelectedIndexChanged += new System.EventHandler(this.cbProducto_SelectedIndexChanged);
+            this.cbProducto.Validating += new System.ComponentModel.CancelEventHandler(this.cbProducto_Validating);
             // 
             // label5
             // 
@@ -130,49 +180,9 @@
             this.btn.Text = "button1";
             this.btn.UseVisualStyleBackColor = true;
             // 
-            // label4
+            // errorProvider1
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 121);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(144, 25);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Forma de pago";
-            // 
-            // rbContado
-            // 
-            this.rbContado.AutoSize = true;
-            this.rbContado.Location = new System.Drawing.Point(26, 161);
-            this.rbContado.Name = "rbContado";
-            this.rbContado.Size = new System.Drawing.Size(126, 29);
-            this.rbContado.TabIndex = 5;
-            this.rbContado.TabStop = true;
-            this.rbContado.Text = "Al contado";
-            this.rbContado.UseVisualStyleBackColor = true;
-            // 
-            // rbCuotas
-            // 
-            this.rbCuotas.AutoSize = true;
-            this.rbCuotas.Location = new System.Drawing.Point(26, 196);
-            this.rbCuotas.Name = "rbCuotas";
-            this.rbCuotas.Size = new System.Drawing.Size(96, 29);
-            this.rbCuotas.TabIndex = 6;
-            this.rbCuotas.TabStop = true;
-            this.rbCuotas.Text = "Cuotas";
-            this.rbCuotas.UseVisualStyleBackColor = true;
-            // 
-            // cbCuotas
-            // 
-            this.cbCuotas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbCuotas.FormattingEnabled = true;
-            this.cbCuotas.Items.AddRange(new object[] {
-            "12",
-            "18",
-            "36"});
-            this.cbCuotas.Location = new System.Drawing.Point(157, 192);
-            this.cbCuotas.Name = "cbCuotas";
-            this.cbCuotas.Size = new System.Drawing.Size(120, 33);
-            this.cbCuotas.TabIndex = 7;
+            this.errorProvider1.ContainerControl = this;
             // 
             // Form1
             // 
@@ -186,8 +196,10 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Compra";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -207,6 +219,7 @@
         private System.Windows.Forms.RadioButton rbCuotas;
         private System.Windows.Forms.RadioButton rbContado;
         private System.Windows.Forms.ComboBox cbCuotas;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
 
