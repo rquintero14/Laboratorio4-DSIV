@@ -14,9 +14,13 @@ namespace Laboratorio4
     {
         double montoBruto, montoNeto,interes=0;
         int cantidadCuota;
-        public Form1()
-        {
+        string nombre;
+        public Form1(String nombre)
+        {   
+            
             InitializeComponent();
+            this.nombre = nombre;
+            
         }
 
         void DeterminarBruto() {
@@ -154,6 +158,7 @@ namespace Laboratorio4
             errorProvider1.BlinkStyle = ErrorBlinkStyle.NeverBlink;
             cbCuotas.Hide();
             esconderResultados();
+            lbBienvenida.Text = "¡Bienvenido " + nombre + "!";
         }
 
         private void cbProducto_SelectedIndexChanged(object sender, EventArgs e)

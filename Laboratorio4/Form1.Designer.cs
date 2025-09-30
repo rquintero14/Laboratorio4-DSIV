@@ -48,27 +48,30 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(200, 22);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(153, 17);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 31);
+            this.label1.Size = new System.Drawing.Size(197, 55);
             this.label1.TabIndex = 0;
             this.label1.Text = "Raenco";
             // 
             // lbBienvenida
             // 
             this.lbBienvenida.AutoSize = true;
-            this.lbBienvenida.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbBienvenida.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbBienvenida.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lbBienvenida.Location = new System.Drawing.Point(112, 72);
             this.lbBienvenida.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbBienvenida.Name = "lbBienvenida";
-            this.lbBienvenida.Size = new System.Drawing.Size(112, 20);
+            this.lbBienvenida.Size = new System.Drawing.Size(165, 29);
             this.lbBienvenida.TabIndex = 0;
             this.lbBienvenida.Text = "¡Bienvenido, ";
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.Pink;
             this.groupBox2.Controls.Add(this.cbCuotas);
             this.groupBox2.Controls.Add(this.rbCuotas);
             this.groupBox2.Controls.Add(this.rbContado);
@@ -192,7 +195,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.Firebrick;
             this.ClientSize = new System.Drawing.Size(526, 467);
             this.Controls.Add(this.lbBienvenida);
             this.Controls.Add(this.groupBox2);

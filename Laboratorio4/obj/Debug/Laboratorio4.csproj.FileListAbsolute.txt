@@ -20,3 +20,4 @@ C:\Users\Usuario\OneDrive\UNIVERSIDAD\UTP\SEMESTRES\2 AÑO\2 SEMESTRE\DS IV\Acti
 C:\Users\Usuario\OneDrive\UNIVERSIDAD\UTP\SEMESTRES\2 AÑO\2 SEMESTRE\DS IV\Actividades\Laboratorios\Lab4\Laboratorio4-DSIV\Laboratorio4\obj\Debug\Laboratorio4.csproj.CoreCompileInputs.cache
 C:\Users\Usuario\OneDrive\UNIVERSIDAD\UTP\SEMESTRES\2 AÑO\2 SEMESTRE\DS IV\Actividades\Laboratorios\Lab4\Laboratorio4-DSIV\Laboratorio4\obj\Debug\Laboratorio4.exe
 C:\Users\Usuario\OneDrive\UNIVERSIDAD\UTP\SEMESTRES\2 AÑO\2 SEMESTRE\DS IV\Actividades\Laboratorios\Lab4\Laboratorio4-DSIV\Laboratorio4\obj\Debug\Laboratorio4.pdb
+C:\Users\Usuario\OneDrive\UNIVERSIDAD\UTP\SEMESTRES\2 AÑO\2 SEMESTRE\DS IV\Actividades\Laboratorios\Lab4\Laboratorio4-DSIV\Laboratorio4\obj\Debug\Laboratorio4.Registro.resources
