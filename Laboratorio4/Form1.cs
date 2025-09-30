@@ -20,32 +20,70 @@ namespace Laboratorio4
         }
 
         void DeterminarBruto() {
-            if (cbProducto.SelectedIndex == 0)
-                montoBruto = 160;
-            else if (cbProducto.SelectedIndex == 1)
-                montoBruto = 450;
-            else if (cbProducto.SelectedIndex == 2)
-                montoBruto = 250;
-            else errorProvider1.SetError(cbProducto,"Debe seleccionar una opción para continuar");
-            
+            try
+            {
+                if (cbProducto.SelectedIndex == 0)
+                    montoBruto = 160;
+                else if (cbProducto.SelectedIndex == 1)
+                    montoBruto = 450;
+                else if (cbProducto.SelectedIndex == 2)
+                    montoBruto = 250;
+                else errorProvider1.SetError(cbProducto, "Debe seleccionar una opción para continuar");
+
+            }
+            catch (IndexOutOfRangeException e)
+            {
+                MessageBox.Show("Debe seleccionar una opción para continuar", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Ha ocurrido un error inesperado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
 
-        void CalcularInteres() {
-            
-            if (cbCuotas.SelectedIndex == 0)
-                interes = 0.05;
-            else if (cbCuotas.SelectedIndex == 1)
-                interes = 0.07;
-            else if (cbCuotas.SelectedIndex == 2)
-                interes = 0.1;
-            else interes = 0;
+        void CalcularInteres()
+        {
+            try
+            {
+                if (cbCuotas.SelectedIndex == 0)
+                    interes = 0.05;
+                else if (cbCuotas.SelectedIndex == 1)
+                    interes = 0.07;
+                else if (cbCuotas.SelectedIndex == 2)
+                    interes = 0.1;
+                else interes = 0;
+            }
+            catch (IndexOutOfRangeException e)
+            {
+                MessageBox.Show("Debe seleccionar una opción para continuar", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Ha ocurrido un error inesperado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
         }
 
         void CalcularNeto() {
-            montoNeto = montoBruto * (1.07 + interes);
-            txtMontoF.Text = "El Monto final es de: " + Math.Round(montoNeto,2);
-            txtMontoC.Text = "El monto por cuotas es de: " + Math.Round(montoNeto / cantidadCuota,2);
-
+            try
+            {
+                montoNeto = montoBruto * (1.07 + interes);
+                txtMontoF.Text = "El Monto final es de: " + Math.Round(montoNeto, 2);
+                txtMontoC.Text = "El monto por cuotas es de: " + Math.Round(montoNeto / cantidadCuota, 2);
+            }
+            catch (DivideByZeroException e)
+            {
+                MessageBox.Show("Ocurrió un error inesperado", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            catch (FormatException e)
+            {
+                MessageBox.Show("Ocurrió un error inesperado", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Ha ocurrido un error inesperado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void cbProducto_Validating(object sender, CancelEventArgs e)
@@ -77,7 +115,14 @@ namespace Laboratorio4
             if (cbCuotas.SelectedIndex != -1)
             {
                 CalcularInteres();
-                cantidadCuota = int.Parse(cbCuotas.SelectedItem.ToString());
+                try {
+                    cantidadCuota = int.Parse(cbCuotas.SelectedItem.ToString());
+                }catch (FormatException ex) {
+                    MessageBox.Show("Ocurrió un error inesperado", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }catch (Exception ex) {
+                    MessageBox.Show("Ha ocurrido un error inesperado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
                 CalcularNeto();
                 mostrarResultados();
             }
@@ -112,7 +157,7 @@ namespace Laboratorio4
         }
 
         private void cbProducto_SelectedIndexChanged(object sender, EventArgs e)
-        {
+        {   
             DeterminarBruto();
             CalcularNeto();
         }

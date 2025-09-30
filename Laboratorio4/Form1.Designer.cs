@@ -59,12 +59,13 @@
             // lbBienvenida
             // 
             this.lbBienvenida.AutoSize = true;
-            this.lbBienvenida.Location = new System.Drawing.Point(39, 58);
+            this.lbBienvenida.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbBienvenida.Location = new System.Drawing.Point(112, 72);
             this.lbBienvenida.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbBienvenida.Name = "lbBienvenida";
-            this.lbBienvenida.Size = new System.Drawing.Size(10, 13);
+            this.lbBienvenida.Size = new System.Drawing.Size(112, 20);
             this.lbBienvenida.TabIndex = 0;
-            this.lbBienvenida.Text = ".";
+            this.lbBienvenida.Text = "¡Bienvenido, ";
             // 
             // groupBox2
             // 
@@ -77,7 +78,7 @@
             this.groupBox2.Controls.Add(this.cbProducto);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(81, 58);
+            this.groupBox2.Location = new System.Drawing.Point(75, 115);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
@@ -140,7 +141,7 @@
             // txtMontoF
             // 
             this.txtMontoF.AutoSize = true;
-            this.txtMontoF.Location = new System.Drawing.Point(16, 240);
+            this.txtMontoF.Location = new System.Drawing.Point(16, 204);
             this.txtMontoF.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.txtMontoF.Name = "txtMontoF";
             this.txtMontoF.Size = new System.Drawing.Size(95, 20);
@@ -150,7 +151,7 @@
             // txtMontoC
             // 
             this.txtMontoC.AutoSize = true;
-            this.txtMontoC.Location = new System.Drawing.Point(16, 208);
+            this.txtMontoC.Location = new System.Drawing.Point(16, 234);
             this.txtMontoC.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.txtMontoC.Name = "txtMontoC";
             this.txtMontoC.Size = new System.Drawing.Size(133, 20);
@@ -181,7 +182,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(234, 20);
             this.label5.TabIndex = 0;
-            this.label5.Text = "¿Que producto desea comprar?";
+            this.label5.Text = "¿Qué producto desea comprar?";
             // 
             // errorProvider1
             // 
@@ -192,7 +193,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(543, 379);
+            this.ClientSize = new System.Drawing.Size(526, 467);
             this.Controls.Add(this.lbBienvenida);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label1);
